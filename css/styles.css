@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.octocat {
+  width: 30%;
+  display: inline-block;
+  color: red;
+  margin: 10px;
+  border: solid;
+  border-width: thin;
+  border-color: black;
+}
+
+.octodex {
+  width: auto;
+  display: inline-block;
+}
+
+ul {
+list-style: none;
+}
+
+.image-footer {
+  background: blue;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  border-bottom: 2px;
+}
+
+.image-number {
+  display: inline-block;
+  color: red;
+  position: absolute;
+  top: 10px;
+}
+
+.image-caption {
+  display: inline-block;
+  color: purple;
+  position: absolute;
+  left: 200px;
+}
+
+.authors {
+  display: inline-block;
+  position: absolute;
+  right: auto;
+  vertical-align: middle;
+}
+
+.authors>li {
+  display: inline-block;
+  vertical-align: middle;
+
+}
