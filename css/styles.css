@@ -26,36 +26,27 @@ list-style: none;
 }
 
 .image-footer {
-  background: blue;
+  background: red;
   height: auto;
   display: inline-block;
-  position: relative;
-  border-bottom: 2px;
 }
 
 .image-number {
   display: inline-block;
-  color: red;
-  position: absolute;
-  top: 10px;
 }
 
 .image-caption {
   display: inline-block;
-  color: purple;
-  position: absolute;
-  left: 200px;
-}
+  /* background-color: blue; */
+  }
 
 .authors {
   display: inline-block;
-  position: absolute;
-  right: auto;
   vertical-align: middle;
 }
 
-.authors>li {
+.authors>li>a {
   display: inline-block;
   vertical-align: middle;
-
+  width: 30px;
 }
