@@ -6,43 +6,57 @@ img {
   width: 100%;
 }
 
+ul {
+list-style: none;
+}
+
 .octocat {
   width: 30%;
   display: inline-block;
   margin: 10px;
 }
 
-.octocat>a>img {
+.octocat>a {
+  display: inline-block;
   border: solid;
   border-width: thin;
-  border-color: gray;
+  border-color: #CACACA;
+  position: relative;
+  border-radius: 3px;
 }
+
+.octocat>a::after {
+  content:"";
+  border-top: solid 8px #CACACA;
+  border-left: solid 8px transparent;
+  border-right: solid 8px transparent;
+  position: absolute;
+  right: 1%;
+  top: 100%;
+}
+
 
 .octodex {
   width: auto;
   display: inline-block;
 }
 
-ul {
-list-style: none;
-}
 
 .image-footer {
-  padding: 5px ;
+  padding: 10px 0px ;
   width: 100%;
   height: auto;
   display: inline-block;
   border-bottom: solid;
-  /* vertical-align: middle; */
   border-width: thin;
-  border-color: gray;
+  border-color: #CACACA;
 }
 
 .image-number {
   display: inline-block;
-  /* vertical-align: middle; */
-  /* margin-top: 8px; */
-  float: left;
+  margin-top: 8px;
+  text-align: left;
+
 }
 
 .image-caption {
