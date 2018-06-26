@@ -9,11 +9,13 @@ img {
 .octocat {
   width: 30%;
   display: inline-block;
-  color: red;
   margin: 10px;
+}
+
+.octocat>a>img {
   border: solid;
   border-width: thin;
-  border-color: black;
+  border-color: gray;
 }
 
 .octodex {
@@ -26,27 +28,42 @@ list-style: none;
 }
 
 .image-footer {
-  background: red;
+  padding: 5px ;
+  width: 100%;
   height: auto;
   display: inline-block;
+  border-bottom: solid;
+  /* vertical-align: middle; */
+  border-width: thin;
+  border-color: gray;
 }
 
 .image-number {
   display: inline-block;
+  /* vertical-align: middle; */
+  /* margin-top: 8px; */
+  float: left;
 }
 
 .image-caption {
+  float: right;
   display: inline-block;
-  /* background-color: blue; */
+  vertical-align: middle;
   }
 
 .authors {
   display: inline-block;
   vertical-align: middle;
+  padding: 0px;
 }
+
 
 .authors>li>a {
   display: inline-block;
   vertical-align: middle;
   width: 30px;
+}
+
+.image-number::before {
+content: "#";
 }
